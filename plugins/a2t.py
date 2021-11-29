@@ -15,10 +15,9 @@ from support.buttons import change_language, close_button
 
 @Client.on_message(filters.private & (filters.voice | filters.audio | filters.document))
 async def aud2txt(c, m: Message):
-    Fgg = "4fghdd.mp4"
-    print("1"+Fgg.rsplit('4', 1)[1])
-    print("2"+Fgg.rsplit('4', 1)[-1])
-    print("3"+Fgg.rsplit('4', 1)[0])
+    F = ['a', 'b', 'c']
+    g = "|".join(F)
+    print(g)
     return
     id = m.from_user.id
     if id not in language_key:
