@@ -15,6 +15,10 @@ from support.buttons import change_language, close_button
 
 @Client.on_message(filters.private & (filters.voice | filters.audio | filters.document))
 async def aud2txt(c, m: Message):
+    Fgg = "fghdd.mp4"
+    print(Fgg.rsplit('.', 1)[1])
+    print(Fgg.rsplit('.', 1)[-1])
+    return
     id = m.from_user.id
     if id not in language_key:
         language_key[id] = 'en-US'
